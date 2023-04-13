@@ -1,14 +1,15 @@
 <template>
     <header>
-        <div class="container pt-3 pb-3 d-flex justify-content-between">
+        <div class="container pt-3 d-flex justify-content-between">
             <div id="img_container">
                 <a href="#"><img src="../assets/img/dc-logo.png" alt="dc-logo"></a>
             </div>
             <div id="navbar_container">
                 <ul class="d-flex list-unstyled pt-5">
                     <li v-for="(link, index) in navbar" :key="index">
-                        <a href="link.url" :class="{ 'active': link.current }"
-                            class="px-3 text-decoration-none text-uppercase text-dark fw-bold">{{ link.text }}</a>
+                        <a href="link.url" class="px-3 text-decoration-none text-uppercase text-dark fw-bold small">{{
+                            link.text }}
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -30,10 +31,17 @@ export default {
 
 <style lang="scss" scoped>
 header {
+    height: 9.6rem;
     border-bottom: 1px solid;
 }
 
-.active {
-    background-color: red;
+li {
+    padding-bottom: 4rem;
+
+    &:hover {
+        border-bottom: 5px solid #0c7cec;
+        cursor: pointer;
+        padding: 1px;
+    }
 }
 </style>
