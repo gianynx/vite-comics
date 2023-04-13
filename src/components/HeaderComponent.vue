@@ -7,7 +7,7 @@
             <div id="navbar_container">
                 <ul class="d-flex list-unstyled pt-5">
                     <li v-for="(link, index) in navbar" :key="index">
-                        <a href="link.url" class="px-3 text-decoration-none text-uppercase text-dark fw-bold small">{{
+                        <a href="link.url" class="px-3 text-decoration-none text-uppercase fw-bold small text-dark">{{
                             link.text }}
                         </a>
                     </li>
