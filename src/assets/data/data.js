@@ -1,4 +1,4 @@
-const links = [
+export const links = [
     {
         text: "Characters",
         url: "#",

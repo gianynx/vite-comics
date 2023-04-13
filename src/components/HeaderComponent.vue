@@ -1,13 +1,14 @@
 <template>
     <header>
-        <div class="container pt-5">
+        <div class="container pt-3 pb-3 d-flex justify-content-between">
             <div id="img_container">
-                <img src="../assets/img/dc-logo.png" alt="dc-logo">
+                <a href="#"><img src="../assets/img/dc-logo.png" alt="dc-logo"></a>
             </div>
             <div id="navbar_container">
-                <ul>
+                <ul class="d-flex list-unstyled pt-5">
                     <li v-for="(link, index) in navbar" :key="index">
-                        <a href="link.url" :class="{ 'active': link.current }">{{ link.text }}</a>
+                        <a href="link.url" :class="{ 'active': link.current }"
+                            class="px-3 text-decoration-none text-uppercase text-dark fw-bold">{{ link.text }}</a>
                     </li>
                 </ul>
             </div>
@@ -16,7 +17,7 @@
 </template>
 
 <script>
-import { links } from '../assets/data/data.js'
+import { links } from '../assets/data/data.js';
 export default {
     name: 'HeaderComponent',
     data() {
@@ -27,4 +28,12 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+header {
+    border-bottom: 1px solid;
+}
+
+.active {
+    background-color: red;
+}
+</style>
