@@ -29,9 +29,5 @@ img {
 .card {
     border: none;
     background-color: #1c1c1c;
-
-    &:hover {
-        padding: 5px;
-    }
 }
 </style>

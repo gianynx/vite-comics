@@ -1,52 +1,65 @@
-export const links = [
+const links = [
     {
         text: "Characters",
-        url: "#",
-        current: false
+        url: "#"
     },
     {
         text: "Comics",
-        url: "#",
-        current: false
+        url: "#"
     },
     {
         text: "Movies",
-        url: "#",
-        current: false
+        url: "#"
     },
     {
         text: "Tv",
-        url: "#",
-        current: false
+        url: "#"
     },
     {
         text: "Games",
-        url: "#",
-        current: false
+        url: "#"
     },
     {
         text: "Collectibles",
-        url: "#",
-        current: false
+        url: "#"
     },
     {
         text: "Videos",
-        url: "#",
-        current: false
+        url: "#"
     },
     {
         text: "Fans",
-        url: "#",
-        current: false
+        url: "#"
     },
     {
         text: "News",
-        url: "#",
-        current: false
+        url: "#"
     },
     {
         text: "Shop",
-        url: "#",
-        current: false
+        url: "#"
     }
 ]
+const buyComics = [
+    {
+        text: "Digital Comics",
+        icon: "buy-comics-digital-comics.png"
+    },
+    {
+        text: "DC Merchandise",
+        icon: "buy-comics-merchandise.png"
+    },
+    {
+        text: "Subscription",
+        icon: "buy-comics-subscriptions.png"
+    },
+    {
+        text: "Comic Shop Locator",
+        icon: "buy-comics-shop-locator.png"
+    },
+    {
+        text: "DC Power Visa",
+        icon: "buy-dc-power-visa.svg"
+    }
+]
+export { links, buyComics }

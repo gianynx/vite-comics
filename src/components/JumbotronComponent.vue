@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div id="jumbotron" class="w-100"></div>
+        <div id="jumbotron"></div>
     </section>
 </template>
 
