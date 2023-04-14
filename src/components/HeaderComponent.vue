@@ -32,7 +32,6 @@ export default {
 <style lang="scss" scoped>
 header {
     height: 9.6rem;
-    border-bottom: 1px solid;
 }
 
 li {

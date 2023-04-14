@@ -3,7 +3,7 @@
         <div class="card">
             <div class="card-body">
                 <div class="card-image">
-                    <a href="#"><img class="w-100" :src="image" :alt="title"></a>
+                    <a href="#"><img :src="image" :alt="title"></a>
                 </div>
                 <div class="card-title text-uppercase fw-bold small text-white pt-3">
                     {{ title }}
@@ -22,8 +22,8 @@ export default {
 
 <style lang="scss" scoped>
 img {
-    height: 180px;
-    width: 200px;
+    height: 170px;
+    width: 170px;
 }
 
 .card {
