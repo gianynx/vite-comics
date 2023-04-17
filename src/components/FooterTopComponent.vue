@@ -1,11 +1,9 @@
 <template>
     <section>
         <div id="footer_top">
-            <div class="container d-flex justify-content-between">
-                <ul class="list-unstyled">
-                    <li v-for="(item, index) in buyComics" :key="index">
-                        <img :src="item.icon" :alt="icon.text">
-                    </li>
+            <div class="container">
+                <ul class="list-unstyled d-flex justify-content-between">
+
                 </ul>
             </div>
         </div>
@@ -18,7 +16,7 @@ export default {
     name: 'FooterTopComponent',
     data() {
         return {
-            buyComics: buyComics
+            buyComicsFooter: buyComics
         }
     }
 }
